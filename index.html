@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity for Charity - Student Sponsorship</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>Unity For Charity</h1>
+        <h3>Student Sponsorship Profile Generator</h3>
+
+        <form id="studentForm">
+
+            <!-- Child Information -->
+
+            <div class="section">
+
+                <h2>Child Information</h2>
+
+                <input type="text" id="childName" placeholder="Child Name" required>
+
+                <input type="date" id="dob" required>
+                <input type="text"
+                id="academicYear"
+                placeholder="Academic Year (Ex: 2026-27)"
+                required>
+                <select id="studentClass" required>
+                    <option value="">Select Class</option>
+                    <option>LKG</option>
+                    <option>UKG</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>Inter 1</option>
+                    <option>Inter 2</option>
+                    <option>Graduation</option>
+                </select>
+
+                <input type="text" id="nativePlace" placeholder="Native Place">
+
+                <label>Student Photo</label>
+        
+                <input type="file"
+       id="studentPhoto"
+       accept="image/*">
+
+
+
+            </div>
+
+
+            <!-- Parent Information -->
+
+            <div class="section">
+
+                <h2>Father Details</h2>
+
+                <input type="text" id="fatherName" placeholder="Father Name">
+
+                <input type="text" id="fatherOccupation" placeholder="Occupation">
+
+                <input type="number" id="fatherIncome" placeholder="Monthly Income">
+
+            </div>
+
+
+            <div class="section">
+
+                <h2>Mother Details</h2>
+
+                <input type="text" id="motherName" placeholder="Mother Name">
+
+                <input type="text" id="motherOccupation" placeholder="Occupation">
+
+                <input type="number" id="motherIncome" placeholder="Monthly Income">
+
+            </div>
+
+
+            <!-- Address -->
+
+            <div class="section">
+
+                <h2>Address</h2>
+
+                <textarea id="address"
+                    placeholder="Complete Address"></textarea>
+
+            </div>
+
+
+            <!-- School -->
+
+            <div class="section">
+
+                <h2>School Details</h2>
+
+                <input type="text" id="schoolName"
+                    placeholder="School Name">
+
+                <textarea id="schoolAddress"
+                    placeholder="School Address"></textarea>
+
+                <input type="text"
+                    id="contactPerson"
+                    placeholder="Contact Person">
+
+                <input type="tel"
+                    id="phone"
+                    placeholder="Phone Number">
+
+                <input type="email"
+                    id="email"
+                    placeholder="Email Address">
+
+                <label>School Photo</label>
+                <input type="file" id="schoolPhoto" accept="image/*">
+
+
+
+            </div>
+
+
+            <!-- Family -->
+
+            <div class="section">
+
+                <h2>Family Details</h2>
+
+                <input type="text"
+                    id="siblings"
+                    placeholder="Brothers & Sisters">
+
+                <textarea
+                    id="familyHistory"
+                    placeholder="Family History"></textarea>
+
+            </div>
+
+
+            <!-- Sponsorship -->
+
+            <div class="section">
+
+                <h2>Sponsorship Details</h2>
+
+                <input type="number"
+                    id="educationFee"
+                    placeholder="Education Fee" readonly>
+
+                <input type="number"
+                    id="hostelFee"
+                    placeholder="Hostel Fee" readonly>
+
+                    <input
+                    type="number"
+                    id="totalFee"
+                    placeholder="Total Sponsorship"
+                    readonly>
+
+            </div>
+
+
+            <button type="submit">
+                Generate Student Profile
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
